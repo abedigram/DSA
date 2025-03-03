@@ -1,7 +1,8 @@
 import { bubbleSort } from "./bubbleSort";
 
-const res = bubbleSort()
+const arr = [5, 3, 8, 2, 1, 4];
+bubbleSort(arr)
 
 console.info('###----------***---------###');
-console.log(res)
+console.log(arr)
 console.info('###----------***---------###');

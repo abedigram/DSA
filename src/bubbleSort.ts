@@ -6,8 +6,17 @@
  * O(n^2) time complexity
  * O(1) space complexity
 */
-function bubbleSort() {
-	return [1, 2, 3, 4, 5];
+function bubbleSort(arr: number[]) {
+	for(let i = 0; i < arr.length; i++) {
+		for(let j = 0; j < arr.length - 1 - i; j++) { // * - i to avoid comparing already sorted elements
+			if(arr[j] > arr[j+1]) {
+				const temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+				// [arr[j], arr[j+1]] = [arr[j + 1], arr[j]];
+			}
+		}
+	}
 }
 
 export { bubbleSort };
