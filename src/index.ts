@@ -1,5 +1,6 @@
 import { bubbleSort } from "./bubbleSort";
 import { Queue } from "./queue";
+import { sand } from "./sand";
 import { Stack } from "./stack";
 
 // const arr = [5, 3, 8, 2, 1, 4];
@@ -15,5 +16,5 @@ import { Stack } from "./stack";
 
 
 console.info('###----------***---------###');
-
+sand()
 console.info('###----------***---------###');
